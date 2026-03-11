@@ -1,0 +1,6 @@
+Num=input("Enter values: ")
+Temp=Num.split(',')
+for i in range(0,len(Temp)):
+    if(int(Temp[i],2)%5==0):
+        print(Temp[i],end=",")
+print()
