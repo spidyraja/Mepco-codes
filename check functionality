@@ -1,0 +1,14 @@
+myset= input("Enter elements separated by spaces: ")
+sets = set(myset.split())
+print("The resulting set is:", sets)
+print("the lenght of set is:",len(sets))
+print("iterate over set is")
+for i in sets:
+   print(i)
+a=input("enter a elemnt to check")
+def value(a,sets):
+   if a in sets:
+     print("exists")
+   else:
+     print("not exists")
+value(a,sets)
