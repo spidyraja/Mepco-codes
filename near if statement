@@ -1,0 +1,18 @@
+print("temp:warm,cold")
+print("humidity:dry,humid")
+a=input("enter the temperature:")
+b=input("enter the humidity:")
+if(a=="warm"):
+   if(b=="dry"):
+      print("play basketball")
+   elif(b=="humid"):
+      print("play tennis")
+   else:
+      print("invalid")
+if(a=="cold"):
+   if(b=="dry"):
+      print("play cricket")
+   elif(b=="humid"):
+      print("play swim")
+   else:
+      print("invalid")
