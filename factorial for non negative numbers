@@ -1,0 +1,10 @@
+def Factorial(Num):
+    if(Num<0):
+        return
+    Fact=int(1)
+    for i in range(1,Num+1):
+        Fact*=i
+    print(Fact)
+num=int(input("Enter Number: "))
+print("Factorial of number: ")
+Factorial(num)
