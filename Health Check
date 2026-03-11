@@ -1,0 +1,18 @@
+import requests
+import time
+
+# Add the websites you want to monitor
+URLS = ["https://www.google.com", "https://github.com", "https://python.org"]
+
+def check_sites():
+    print(f"--- Checking Site Status ({time.ctime()}) ---")
+    for url in URLS:
+        try:
+            response = requests.get(url, timeout=5)
+            status = "UP ✅" if response.status_code == 200 else f"DOWN ❌ ({response.status_code})"
+            print(f"{url}: {status}")
+        except requests.exceptions.RequestException:
+            print(f"{url}: DOWN ❌ (Connection Error)")
+
+if __name__ == "__main__":
+    check_sites()
