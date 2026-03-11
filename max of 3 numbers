@@ -1,0 +1,12 @@
+def Max_of_3(a,b,c):
+    if(a>=b and a>=c):
+        print(a)
+    elif(b>=a and b>=c):
+        print(b)
+    else:
+        print(c)
+A=int(input("Enter A: "))
+B=int(input("Enter B: "))
+C=int(input("Enter C: "))
+print("maximum of A,B,C: ")
+Max_of_3(A,B,C)
