@@ -1,0 +1,13 @@
+Sum=int(0)
+A=int(0)
+B=int(1)
+N=int(50)
+print(A)
+print(B)
+while(N!=0):
+    Sum=A+B
+    if(Sum<=N):
+        print(Sum)
+        A=B
+        B=Sum
+    else: break
