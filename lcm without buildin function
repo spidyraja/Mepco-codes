@@ -1,0 +1,8 @@
+a=int(input("enter  number 1:"))
+b=int(input("enter number2:"))
+n1=a
+n2=b
+while b!=0:
+   a,b=b,a%b
+lcm=(n1*n2)/(a)
+print(lcm)
