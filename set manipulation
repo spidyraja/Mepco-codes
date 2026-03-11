@@ -1,0 +1,15 @@
+mylist= input("Enter elements separated by spaces: ")
+lists = list(mylist.split())
+myset=set(lists)
+print("The resulting list is:", lists)
+print("The resulting set is:", set(lists))
+def add():
+   val = input("Enter a value to add: ")
+   myset.add(val)
+   print("Updated set:", myset)
+def remove():
+   val = input("Enter a value to remove: ")
+   myset.remove(val)
+   print("Updated set:", myset)
+add()
+remove()
