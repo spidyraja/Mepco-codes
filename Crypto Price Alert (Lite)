@@ -1,0 +1,13 @@
+import requests
+
+def get_crypto_price(coin="bitcoin"):
+    url = f"https://api.coingecko.com{coin}&vs_currencies=usd"
+    try:
+        data = requests.get(url).json()
+        price = data[coin]['usd']
+        print(f"The current price of {coin.upper()} is: ${price:,}")
+    except Exception as e:
+        print("Error fetching data. Check your internet connection.")
+
+if __name__ == "__main__":
+    get_crypto_price("bitcoin")
