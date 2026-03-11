@@ -1,0 +1,10 @@
+P=int(input("Enter Principle: "))
+R=float(input("Enter Rate of Interest in %: "))
+T=float(input("Enter Duration: "))
+N=int(input("Enter frequency: "))
+SI=(P*T*R)/100
+CI=((1+((R*T)/100))**(N*T))*P
+print("Simple Interest")
+print(SI)
+print("Compound Interest")
+print(CI)
