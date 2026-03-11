@@ -1,0 +1,19 @@
+a=int(input("enter 1 for base and height and 2 for sides:"))
+if(a==1):
+   b=float(input("enter the base:"))
+   c=float(input("enter the height:"))
+   if(b<=0 or c<=0):
+      print("invalid")
+   else:
+      area=0.5*b*c
+      print(area)
+elif(a==2):
+      s1=float(input("enter the side 1"))
+      s2=float(input("enter the side 2"))
+      s3=float(input("enter the side 3"))
+      if(s1<=0 or s2<=0 or s3<=0):
+         print("invalid")
+      else:
+         s=s1+s2+s3/2
+         area=(s*(s-s1)*(s-s2)*(s-s3))**0.5
+         print(area)
