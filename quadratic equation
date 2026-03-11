@@ -1,0 +1,17 @@
+A=float(input("Enter a: "))
+B=float(input("Enter b: "))
+C=float(input("Enter c: "))
+alpha=(B*B)-4*A*C
+if(alpha<0):
+    alpha=-alpha
+    print("Solution")
+    Real=(-(B/(2*A)))
+    Img=((alpha**0.5)/(2*A))
+    print(Real,"+j",Img)
+    print(Real,"-j",Img)
+else:
+    print("Solution")
+    sol1=(-B+(alpha**0.5))/(2*A)
+    sol2=(-B-(alpha**0.5))/(2*A)
+    print(sol1)
+    print(sol2)
