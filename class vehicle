@@ -1,0 +1,15 @@
+class vechicle:
+   def __init__(self,brand,model,hp,year):
+      self.brand=brand
+      self.model=model
+      self.hp=hp
+      self.year=year
+   def display(self):
+      print("Brand:",self.brand)
+      print("Model:",self.model)
+      print("HP:",self.hp)
+      print("year of manufatoring:",self.year)
+x1=vechicle("audi","rt",700,2019)
+x2=vechicle("benz","p6",600,2015)
+x1.display()
+x2.display()
