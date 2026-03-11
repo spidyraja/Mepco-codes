@@ -1,0 +1,10 @@
+Num = int(input("Enter Number: "))
+Flag=int(0)
+for i in range(2,Num//2):
+    if(Num%i==0):
+        Flag=1
+        break
+if (Flag==0):
+    print(Num,"is Prime")
+else:
+    print(Num,"is not Prime")
